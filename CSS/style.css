@@ -3,3 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    width: calc(80% - 200px);
+    height: 450px;
+    margin: 200px auto;
+    position: relative;
+}
+
+.sliders{
+    height: 100%;
+}
+
+
+.slider img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.slider{
+    display: none;
+}
+
+.slider.visual{
+    display: block;
+}
+
+.prev{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-5%, -50%);
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+}
+
+.next{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+}
